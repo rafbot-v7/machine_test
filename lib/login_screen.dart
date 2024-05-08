@@ -26,7 +26,7 @@ class LoginScreen extends StatelessWidget {
             content: Text('Failed to request OTP'),
           ),
         );
-        // Navigator.pushNamed(context, '/otp');
+        Navigator.pushNamed(context, '/otp');
       }
     } catch (e) {
       print('Error requesting OTP: $e');

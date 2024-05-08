@@ -42,12 +42,11 @@ class _LoadingScreenState extends State<LoadingScreen> {
       if (response.statusCode == 200) {
         Navigator.pushReplacementNamed(context, '/login');
       } else {
+        Navigator.pushReplacementNamed(context, '/login');
         print('Failed to load data: ${response.statusCode}');
       }
     } catch (e) {
       print('Error fetching data: $e');
-
-      Navigator.pushReplacementNamed(context, '/login');
     }
   }
 

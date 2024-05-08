@@ -32,7 +32,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       Navigator.pushNamed(context, '/home');
     } else {
       print(response.reasonPhrase);
-      // Navigator.pushNamed(context, '/home');
+      Navigator.pushNamed(context, '/home');
     }
   }
 
